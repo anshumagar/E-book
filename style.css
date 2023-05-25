@@ -179,11 +179,17 @@ header a {
   font-family: Playfair Display;
   font-size: 20px;
   font-weight: 500;
-  margin: 30px 0 30px 60px;
+  /* margin: 30px 0 30px 60px; */
+  display: flex;
+  max-width: 1400px;
+  margin: 30px auto;
 }
 .card-container {
   display: flex;
-  padding: 0 60px;
+  /* padding: 0 60px; */
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .card img {
@@ -216,11 +222,14 @@ header a {
     font-family: Playfair Display;
     font-size: 20px;
     font-weight: 500;
-    margin: 30px 0 30px 60px;
+    max-width: 1400px;
+    display: flex;
+    margin: 30px auto;
   }
   .bookcard-container {
     display: flex;
-    padding: 0 60px;
+    max-width: 1400px;
+    margin: 0 auto;
   }
 
   .bookcard img {
@@ -230,7 +239,6 @@ header a {
   }
 
   .bookcard {
-    background-color: red;
     height: 300px;
     flex: 1;
     box-shadow: 0 4px 8px 0 #c4c4c4;
@@ -269,11 +277,14 @@ header a {
     font-family: Playfair Display;
     font-size: 20px;
     font-weight: 500;
-    margin: 30px 0 30px 60px;
+    max-width: 1400px;
+    margin: 30px auto;
   }
   .bookcard-container {
     display: flex;
-    padding: 0 60px;
+
+    max-width: 1400px;
+    margin: 0 auto;
   }
 
   .bookcard img {
@@ -315,10 +326,17 @@ header a {
   }
 }
 
-.footer {
-  margin: 100px 0 0 0;
-  height: 220px;
+.footer-bg {
   background-color: #e1ddd2;
+}
+
+.footer {
+  /* margin: 100px 0 0 0; */
+  margin: 100px auto 0 auto;
+  height: 220px;
+  max-width: 1400px;
+  background-color: #e1ddd2;
+  /* background-color: red; */
 }
 
 .logo1 {
