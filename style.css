@@ -6,7 +6,11 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-
+.container {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 8fr 4fr 5fr 5fr 3fr;
+  grid-template-areas: "header header header header";
+}
 /* Navigation */
 .navbg {
   background: #e1ddd2;
@@ -273,7 +277,7 @@ header a {
 .booklist1 {
   margin: 90px 0 40px 0;
 
-  .book-title1 {
+  .book-title {
     font-family: Playfair Display;
     font-size: 20px;
     font-weight: 500;
@@ -368,3 +372,7 @@ header a {
 .socialicons1 a {
   margin: 0 12px;
 }
+
+/*for responsive*/
+/* @media screen and (max-width: 900px) and (min-width: 600px) {
+} */
