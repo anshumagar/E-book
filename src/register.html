@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Register</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
@@ -11,8 +11,8 @@
     <div
       class="container max-h-screen bg-[#E1DDD2] bg-center bg-cover px-28 py-5 relative"
     >
-      <!-- Header -->
       <div>
+        <!--Header-->
         <nav class="flex items-center">
           <img src="images/logo.png" class="w-40 cursor-pointer" />
           <ul class="flex-1 text-center">
@@ -34,21 +34,30 @@
             <img src="images/user icon.svg" class="w-5 cursor-pointer" />
           </div>
         </nav>
-        <!--Login-->
       </div>
+
       <div class="flex justify-center items-center h-screen">
         <div class="w-96 py-6 px-[30px] shadow-md bg-white rounded-md">
           <h1 class="font-playfair text-2xl font-semibold flex justify-center">
-            Login
+            Register
           </h1>
 
           <div class="py-3">
+            <label for="fullname" class="block text-[14px] py-3"
+              >Full Name</label
+            >
+            <input
+              type="text"
+              id="fullname"
+              class="border w-full text-[14px] px-4 py-2 rounded"
+              placeholder="Enter your Full Name"
+            />
             <label for="email" class="block text-[14px] py-3">Email</label>
             <input
               type="text"
               id="email"
               class="border w-full text-[14px] px-4 py-2 rounded"
-              placeholder="Enter your email"
+              placeholder="Enter your Full Name"
             />
             <label for="password" class="block text-[14px] py-3"
               >Password</label
@@ -59,12 +68,21 @@
               class="border w-full px-4 py-2 rounded text-[14px]"
               placeholder="Enter your password"
             />
+            <label for="confirm_password" class="block text-[14px] py-3"
+              >Confirm Password</label
+            >
+            <input
+              type="password"
+              id="confirm_password"
+              class="border w-full px-4 py-2 rounded text-[14px]"
+              placeholder="Re-enter your password"
+            />
           </div>
           <div class="py-3">
             <button
               class="bg-[#1768AC] text-white w-full rounded-md py-2 px-6 font-medium inline-block mr-4 hover:bg-transparent hover:border-[#1768AC] hover:text-[#1768AC] duration-300 hover:border border border-transparen"
             >
-              Login
+              Register
             </button>
           </div>
         </div>
