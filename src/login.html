@@ -10,7 +10,7 @@
   </head>
   <body>
     <div
-      class="container max-h-screen bg-[#E1DDD2] bg-center bg-cover px-28 py-5 relative"
+      class="container min-h-screen bg-[#E1DDD2] bg-center bg-cover px-28 py-5 relative flex flex-col"
     >
       <!-- Header -->
       <div>
@@ -18,16 +18,16 @@
           <img src="images/logo.png" class="w-40 cursor-pointer" />
           <ul class="flex-1 text-center">
             <li class="list-none inline-block px-5">
-              <a href="#" class="text-[#131515] px-2">Home</a>
+              <a href="index.html" class="text-[#131515] px-2">Home</a>
             </li>
             <li class="list-none inline-block px-5">
-              <a href="#" class="text-[#131515] px-2">About Us</a>
+              <a href="about.html" class="text-[#131515] px-2">About Us</a>
             </li>
             <li class="list-none inline-block px-5">
-              <a href="#" class="text-[#131515]" px-2>My Books</a>
+              <a href="mybook.html" class="text-[#131515]" px-2>My Books</a>
             </li>
             <li class="list-none inline-block px-5">
-              <a href="#" class="text-[#131515]" px-2>Categories</a>
+              <a href="category.html" class="text-[#131515]" px-2>Categories</a>
             </li>
           </ul>
           <div class="flex space-x-4">
@@ -37,7 +37,7 @@
         </nav>
         <!--Login-->
       </div>
-      <div class="flex justify-center items-center h-screen">
+      <div class="flex justify-center items-center flex-1">
         <div class="w-96 py-6 px-[30px] shadow-md bg-white rounded-md">
           <h1 class="font-playfair text-2xl font-semibold flex justify-center">
             Login
@@ -53,14 +53,28 @@
             />
 
             <label for="password" class="block text-[14px] py-3"
-              >Password</label
-            >
-            <input
-              type="password"
-              id="password"
-              class="border w-full px-4 py-2 rounded text-[14px]"
-              placeholder="Enter your password"
-            />
+              >Password
+            </label>
+            <div class="relative">
+              <input
+                type="password"
+                id="password"
+                class="border w-full px-4 py-2 rounded text-[14px]"
+                placeholder="Enter your password"
+              />
+              <iconify-icon
+                icon="ph:eye-closed"
+                width="24"
+                height="24"
+                class="absolute right-3 top-1/2 -translate-y-1/2"
+              ></iconify-icon>
+              <!-- <iconify-icon
+                icon="ph:eye"
+                width="24"
+                height="24"
+                class="absolute right-3 top-1/2 -translate-y-1/2"
+              ></iconify-icon> -->
+            </div>
           </div>
           <div class="py-3">
             <button
@@ -68,6 +82,10 @@
             >
               Login
             </button>
+          </div>
+          <div class="flex gap-x-2 justify-center">
+            Don't have an account?
+            <a href="register.html" class="text-blue-500">Sign up</a>
           </div>
         </div>
       </div>

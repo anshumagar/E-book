@@ -6,6 +6,7 @@
     <title>Homepage</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   </head>
   <body>
     <!-- Landing Page -->
@@ -16,16 +17,16 @@
         <img src="images/logo.png" class="w-40 cursor-pointer" />
         <ul class="flex-1 text-center">
           <li class="list-none inline-block px-5">
-            <a href="#" class="text-[#131515] px-2">Home</a>
+            <a href="index.html" class="text-[#131515] px-2">Home</a>
           </li>
           <li class="list-none inline-block px-5">
-            <a href="#" class="text-[#131515] px-2">About Us</a>
+            <a href="about.html" class="text-[#131515] px-2">About Us</a>
           </li>
           <li class="list-none inline-block px-5">
-            <a href="#" class="text-[#131515]" px-2>My Books</a>
+            <a href="mybook.html" class="text-[#131515]" px-2>My Books</a>
           </li>
           <li class="list-none inline-block px-5">
-            <a href="#" class="text-[#131515]" px-2>Categories</a>
+            <a href="category.html" class="text-[#131515]" px-2>Categories</a>
           </li>
         </ul>
         <div class="flex space-x-4">
@@ -141,28 +142,39 @@
     </div>
 
     <!-- Recent books -->
+
     <div class="px-28 py-5">
       <!--bg-white border border-[#f2f2f2] drop-shadow-md rounded-xl-->
       <h1 class="text-[30px] font-semibold">Recent Books</h1>
       <div class="w-[210px] h-[350px] py-5">
         <!-- Card Image -->
-        <img
-          src="images/new moon.png"
-          class="w-[210px] h-[280px] object-cover rounded-xl"
-        />
+        <div class="border border-[#f2f2f2] shadow-md rounded-xl">
+          <img
+            src="images/new moon.png"
+            class="w-[210px] h-[280px] object-fill"
+          />
 
-        <!-- Book name -->
-        <h2
-          class="font-semibold text-[#131515] flex justify-center text-[22px] py-2"
-        >
-          New Moon
-        </h2>
-        <h4 class="flex justify-center text-[16px]">-Coolen Hoover</h4>
+          <!-- Book name -->
+          <div class="p-4 px-4 space-y-2">
+            <h2
+              class="font-semibold text-[#131515] text-[22px] flex items-center justify-between"
+            >
+              Harry Potter
+              <iconify-icon
+                icon="ph:heart-light"
+                width="24"
+                height="24"
+              ></iconify-icon>
+            </h2>
+
+            <h4 class="text-[16px]">-Coolen Hoover</h4>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- Footer -->
-    <div class="div">
+    <div class="mt-10">
       <footer
         class="container bg-[#E1DDD2] px-28 py-8 flex flex-col items-center space-y-8"
       >
