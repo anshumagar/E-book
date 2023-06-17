@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </head>
+  <body>
+    <div class="container bg-center bg-cover relative">
+      <!---Header-->
+      <nav class="flex items-center border-b px-28 py-10">
+        <img src="images/logo.png" class="w-40 cursor-pointer" />
+        <ul class="flex-1 text-center">
+          <li class="list-none inline-block px-5">
+            <a href="#" class="text-[#131515] px-2">Home</a>
+          </li>
+          <li class="list-none inline-block px-5">
+            <a href="#" class="text-[#131515] px-2">About Us</a>
+          </li>
+          <li class="list-none inline-block px-5">
+            <a href="#" class="text-[#131515]" px-2>My Books</a>
+          </li>
+          <li class="list-none inline-block px-5">
+            <a href="#" class="text-[#131515]" px-2>Categories</a>
+          </li>
+        </ul>
+        <div class="flex space-x-4">
+          <img src="images/search.svg" class="w-5 cursor-pointer" />
+          <img src="images/user icon.svg" class="w-5 cursor-pointer" />
+        </div>
+      </nav>
+
+      <div class="flex px-28 py-5">
+        <!--Menus-->
+        <div class="mt-[30px] w-[330px]">
+          <div
+            class="container flex flex-col bg-white w-[330px] h-[365px] border rounded-xl border-[#f2f2f2] drop-shadow-sm"
+          >
+            <!--Logo-->
+            <div>
+              <img src="images/logo.png" class="w-52 p-[30px]" />
+            </div>
+            <hr class="mb-[30px]" />
+            <!--Menu List-->
+            <div class="px-[30px] space-y-10">
+              <div class="text-[#131515] text-[16px] font-semibold">
+                <h2>
+                  <a href="#" class="flex gap-x-3"
+                    ><iconify-icon
+                      icon="solar:user-linear"
+                      width="24"
+                      height="24"
+                    ></iconify-icon
+                    >Users
+                  </a>
+                </h2>
+              </div>
+              <div class="text-[#131515] text-[16px] font-semibold">
+                <h2>
+                  <a href="#" class="flex gap-x-3"
+                    ><iconify-icon
+                      icon="ph:book-light"
+                      width="24"
+                      height="24"
+                    ></iconify-icon
+                    >Books</a
+                  >
+                </h2>
+              </div>
+              <div class="text-[#131515] text-[16px] font-semibold">
+                <h2>
+                  <a href="#" class="flex gap-x-3"
+                    ><iconify-icon
+                      icon="octicon:file-24"
+                      width="24"
+                      height="24"
+                    ></iconify-icon
+                    >Category</a
+                  >
+                </h2>
+              </div>
+              <div class="text-[#131515] text-[16px] font-semibold">
+                <h2>
+                  <a href="#" class="flex gap-x-3"
+                    ><iconify-icon
+                      icon="octicon:lock-24"
+                      width="24"
+                      height="24"
+                    ></iconify-icon
+                    >Change Password</a
+                  >
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Category-->
+        <div class="mt-[30px]">
+          <div
+            class="w-[940px] bg-white border rounded-xl ml-[30px] p-[30px] space-y-[30px]"
+          >
+            <!--Category Title-->
+            <div class="text-[#131515] text-[20px] font-medium">
+              <h1>Category</h1>
+            </div>
+            <!--Search-->
+            <div class="flex items-center">
+              <div
+                class="w-[540px] h-[42px] rounded-md border border-[#f2f2f2]"
+              >
+                <section class="w-full h-10 flex items-center relative">
+                  <input
+                    type="text"
+                    class="w-full h-full focus:outline-none px-3 border border-gray-400 rounded-md"
+                    placeholder="Search Category"
+                  />
+                  <button
+                    class="bg-[#1768AC] text-white rounded-md py-2 px-6 font-medium absolute right-0"
+                  >
+                    Search
+                  </button>
+                </section>
+              </div>
+              <!--Add Button-->
+              <button
+                class="border border-[#1768AC] text-[#1768AC] rounded-md py-2 px-4 font-medium absolute right-[154px] flex gap-x-2"
+              >
+                Add Category
+                <iconify-icon
+                  icon="ion:add"
+                  width="24"
+                  height="24"
+                ></iconify-icon>
+              </button>
+            </div>
+            <!--Table-->
+            <div class="col-span-3 overflow-auto">
+              <!-- <div class="col-span-4"> -->
+              <!-- <div class="overflow-auto"> -->
+              <table
+                class="bg-white text-[#131515] table-auto border border-[#f2f2f2] w-full"
+              >
+                <thead class="bg-gray-300 font-semibold text-[#131515]">
+                  <tr class="divide-x divide-y divide-[#131515]">
+                    <th class="px-6 py-3">S.No</th>
+                    <th class="px-40 py-3">Category</th>
+                    <th class="px-14 py-3">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="divide-x divide-y divide-[#494949]">
+                    <td class="p-3 text-[#131515]">1.</td>
+                    <td class="p-3 text-[#131515]">Poetry</td>
+                    <td class="p-3 text-[#131515] flex space-x-3">
+                      <img src="images/edit icon.svg" />
+                      <img src="images/delete icon.svg" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- </div> -->
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
