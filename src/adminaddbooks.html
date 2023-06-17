@@ -97,78 +97,80 @@
             </div>
           </div>
         </div>
-        <!--Books-->
+        <!--Add Books-->
         <div class="mt-[30px]">
           <div
             class="w-[940px] bg-white border rounded-xl ml-[30px] p-[30px] space-y-[30px]"
           >
-            <!--Book Title-->
+            <!--Add Book Title-->
             <div class="text-[#131515] text-[20px] font-medium">
-              <h1>Books</h1>
-            </div>
-            <!--Search-->
-            <div class="flex items-center">
-              <div
-                class="w-[540px] h-[42px] rounded-md border border-[#f2f2f2]"
-              >
-                <section class="w-full h-10 flex items-center relative">
-                  <input
-                    type="text"
-                    class="w-full h-full focus:outline-none px-3 border border-gray-400 rounded-md"
-                    placeholder="Search..."
-                  />
-                  <button
-                    class="bg-[#1768AC] text-white rounded-md py-2 px-6 font-medium absolute right-0"
-                  >
-                    Search
-                  </button>
-                </section>
-              </div>
-              <!--Add Button-->
-              <button
-                class="border border-[#1768AC] text-[#1768AC] rounded-md py-2 px-4 font-medium absolute right-[154px] flex gap-x-2"
-              >
-                Add Books
+              <h1 class="flex gap-x-3">
                 <iconify-icon
-                  icon="ion:add"
+                  icon="solar:arrow-left-linear"
                   width="24"
                   height="24"
                 ></iconify-icon>
-              </button>
+                Add Books
+              </h1>
             </div>
-            <!--Table-->
-            <div class="col-span-6 overflow-auto">
-              <!-- <div class="col-span-4"> -->
-              <!-- <div class="overflow-auto"> -->
-              <table
-                class="bg-white text-[#131515] table-auto border border-[#f2f2f2] w-full"
+            <!--Form-->
+            <div>
+              <label for="book_title" class="block text-[14px] py-3"
+                >Book Title</label
               >
-                <thead class="bg-gray-300 font-semibold text-[#131515]">
-                  <tr class="divide-x divide-y divide-[#131515]">
-                    <th class="px-6 py-3">S.No</th>
-                    <th class="px-24 py-3">Book Name</th>
-                    <th class="px-32 py-3">Author</th>
-                    <th class="px-10 py-3">Category</th>
-                    <th class="px-10 py-3">Date</th>
-                    <th class="px-10 py-3">Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="divide-x divide-y divide-[#494949]">
-                    <td class="p-3 text-[#131515]">1.</td>
-                    <td class="p-3 text-[#131515]">Milk and Honey</td>
-                    <td class="p-3 text-[#131515]">Rupi Kaur</td>
-                    <td class="p-3 text-[#131515]">Poetry</td>
-                    <td class="p-3 text-[#131515]">2022/12/30</td>
-                    <td class="p-3 text-[#131515] flex space-x-3">
-                      <img src="images/edit icon.svg" />
-                      <img src="images/delete icon.svg" />
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <!-- </div> -->
-              <!-- </div> -->
+              <input
+                type="text"
+                id="book_title"
+                class="border w-[650px] text-[14px] px-4 py-2 rounded"
+                placeholder="Enter Book Title"
+              />
+              <label for="author" class="block text-[14px] py-3">Author</label>
+              <input
+                type="text"
+                id="author"
+                class="border w-[650px] text-[14px] px-4 py-2 rounded"
+                placeholder="Enter Author Name"
+              />
+              <label for="category" class="block text-[14px] py-3"
+                >Category
+              </label>
+              <input
+                type="text"
+                id="category"
+                class="border w-[650px] text-[14px] px-4 py-2 rounded"
+                placeholder="Choose Category"
+              />
+              <label for="upload_pdf" class="block text-[14px] py-3"
+                >Upload PDF</label
+              >
+              <input
+                type="text"
+                id="upload_pdf"
+                class="border w-[650px] text-[14px] px-4 py-2 rounded"
+                placeholder="Upload PDF"
+              />
+              <label for="book_img" class="block text-[14px] py-3"
+                >Upload Book images</label
+              >
+              <input
+                type="text"
+                id="book_img"
+                class="border w-[650px] text-[14px] px-4 py-2 rounded"
+                placeholder="Upload Book images"
+              />
+            </div>
+            <!--Save-->
+            <div>
+              <button
+                class="bg-[#1768AC] text-white rounded-md py-2 px-6 font-medium absolute flex gap-x-3"
+              >
+                Save
+                <iconify-icon
+                  icon="bi:save"
+                  width="20"
+                  height="20"
+                ></iconify-icon>
+              </button>
             </div>
           </div>
         </div>
