@@ -1,0 +1,127 @@
+!<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </head>
+  <body>
+    <div class="container bg-center bg-cover relative">
+      <!---Header-->
+      <nav class="flex items-center border-b px-28 py-10">
+        <img src="images/logo.png" class="w-40 cursor-pointer" />
+        <ul class="flex-1 text-center">
+          <li class="list-none inline-block px-5">
+            <a href="index.html" class="text-[#131515] px-2">Home</a>
+          </li>
+          <li class="list-none inline-block px-5">
+            <a href="about.html" class="text-[#131515] px-2">About Us</a>
+          </li>
+          <li class="list-none inline-block px-5">
+            <a href="mybook.html" class="text-[#131515]" px-2>My Books</a>
+          </li>
+          <li class="list-none inline-block px-5">
+            <a href="category.html" class="text-[#131515]" px-2>Categories</a>
+          </li>
+        </ul>
+        <div class="flex space-x-4">
+          <img src="images/search.svg" class="w-5 cursor-pointer" />
+          <img src="images/user icon.svg" class="w-5 cursor-pointer" />
+        </div>
+      </nav>
+      <div class="flex px-28 py-5">
+        <!--Menus-->
+        <div class="mt-[30px] w-[330px]">
+          <div
+            class="container flex flex-col bg-white w-[330px] border rounded-xl border-[#f2f2f2] drop-shadow-sm"
+          >
+            <!--Logo-->
+            <div>
+              <img src="images/logo.png" class="w-52 p-[30px]" />
+            </div>
+            <hr class="mb-[30px]" />
+            <!--Menu List-->
+            <div class="px-[30px] space-y-10">
+              <div class="text-[#131515] text-[16px] font-semibold">
+                <h2>
+                  <a href="usermyprofile.html" class="flex gap-x-3"
+                    ><iconify-icon
+                      icon="solar:user-linear"
+                      width="24"
+                      height="24"
+                    ></iconify-icon
+                    >MyProfile
+                  </a>
+                </h2>
+              </div>
+              <div class="text-[#131515] text-[16px] font-semibold">
+                <h2>
+                  <a href="userfavourite.html" class="flex gap-x-3"
+                    ><iconify-icon
+                      icon="ph:book-light"
+                      width="24"
+                      height="24"
+                    ></iconify-icon
+                    >Favourite</a
+                  >
+                </h2>
+              </div>
+              <div class="text-[#131515] text-[16px] font-semibold">
+                <h2>
+                  <a href="userchangepw.html" class="flex gap-x-3 mb-[30px]"
+                    ><iconify-icon
+                      icon="octicon:file-24"
+                      width="24"
+                      height="24"
+                    ></iconify-icon
+                    >Change Password</a
+                  >
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--My Profile-->
+        <div class="mt-[30px]">
+          <div class="w-[940px] bg-white border rounded-xl ml-[30px] p-[30px]">
+            <!--My Profile Title-->
+            <div class="text-[#131515] text-[20px] font-medium">
+              <h1>My Profile</h1>
+            </div>
+            <!--Form-->
+            <div>
+              <label for="name" class="block text-[14px] py-3">Name</label>
+              <input
+                type="text"
+                id="name"
+                class="border w-[650px] text-[14px] px-4 py-2 rounded"
+              />
+              <label for="email" class="block text-[14px] py-3">Email</label>
+              <input
+                type="text"
+                id="email"
+                class="border w-[650px] text-[14px] px-4 py-2 rounded"
+              />
+            </div>
+            <!-- Save
+            <div class="py-[30px]">
+              <button
+                class="bg-[#1768AC] text-white rounded-md py-2 px-6 font-medium absolute flex gap-x-3"
+              >
+                Save
+                <iconify-icon
+                  icon="bi:save"
+                  width="20"
+                  height="20"
+                ></iconify-icon>
+              </button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
