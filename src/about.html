@@ -8,7 +8,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div class="container bg-red-500 bg-center bg-cover relative">
+    <div
+      class="container min-h-screen bg-[#F6F9FB] bg-center bg-cover relative"
+    >
       <nav
         class="flex items-center bg-white drop-shadow-sm border-b px-28 py-10"
       >
@@ -32,14 +34,50 @@
           <img src="images/user icon.svg" class="w-5 cursor-pointer" />
         </div>
       </nav>
-      <div class="">
-        <section class="flex justify-center">About Us</section>
+      <div class="p-[120px]">
+        <section class="flex justify-center text-3xl mb-[30px]">
+          About Us
+        </section>
 
         <p class="flex justify-center text-center">
           Invoicely is a platform where you can easily create, send and receive
           invoice, bills and estimates. <br />A platform where you can easily
           create, send and receive invoice, bills and estimates.
         </p>
+      </div>
+      <!--Footer-->
+      <div class="">
+        <footer
+          class="container bg-white drop-shadow-xl border border-gray-200 px-28 py-8 flex flex-col items-center space-y-8"
+        >
+          <img src="images/black logo.png" class="w-40 cursor-pointer" />
+          <ul class="flex-1 text-center">
+            <li class="list-none inline-block px-5">
+              <a href="#" class="text-[#131515] px-2">Home</a>
+            </li>
+            <li class="list-none inline-block px-5">
+              <a href="#" class="text-[#131515] px-2">About Us</a>
+            </li>
+            <li class="list-none inline-block px-5">
+              <a href="#" class="text-[#131515]" px-2>My Books</a>
+            </li>
+            <li class="list-none inline-block px-5">
+              <a href="#" class="text-[#131515]" px-2>Categories</a>
+            </li>
+            <li class="list-none inline-block px-5">
+              <a href="#" class="text-[#131515]" px-2>My Profile</a>
+            </li>
+          </ul>
+          <div class="flex space-x-4">
+            <img src="images/fb.svg" class="flex items-center" />
+            <img src="images/insta.svg" />
+            <img src="images/et_linkedin.svg" />
+          </div>
+
+          <section>
+            Copyright © 2022 Book Library | All Rights Reserved.
+          </section>
+        </footer>
       </div>
     </div>
   </body>
