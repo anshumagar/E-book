@@ -6,6 +6,12 @@ module.exports = {
       fontFamily:{
         playfair:['Playfair Display', 'serif']
       }
+      
+    },
+    extend: {
+      fontFamily:{
+        poppins:['Poppins', 'sans-serif']
+      }
     },
   },
   plugins: [],
