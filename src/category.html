@@ -3,16 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage</title>
+    <title>Categories</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   </head>
   <body>
-    <!-- Landing Page -->
-    <div
-      class="container min-h-screen bg-[#E1DDD2] bg-center bg-cover px-28 py-5 relative"
-    >
-      <nav class="flex items-center">
+    <div class="container bg-center bg-cover relative">
+      <!---Header-->
+      <nav class="flex items-center border-b px-28 py-10">
         <img src="images/logo.png" class="w-40 cursor-pointer" />
         <ul class="flex-1 text-center">
           <li class="list-none inline-block px-5">
@@ -33,6 +32,77 @@
           <img src="images/user icon.svg" class="w-5 cursor-pointer" />
         </div>
       </nav>
+    </div>
+
+    <!--Categories-->
+    <div class="px-28">
+      <h1 class="text-[30px] font-medium py-7">Categories</h1>
+      <div class="grid grid-cols-4 gap-x-10">
+        <div
+          class="h-[330px] bg-white border border-[#f2f2f2] drop-shadow-md rounded-xl"
+        >
+          <!-- Card Image -->
+          <img
+            src="images/milk and honey.png"
+            class="w-full h-[260px] object-cover rounded-xl"
+          />
+
+          <!-- Category name -->
+          <h2
+            class="font-semibold text-[#131515] flex justify-center text-[22px] py-4"
+          >
+            Poetry
+          </h2>
+        </div>
+        <div
+          class="h-[330px] bg-white border border-[#f2f2f2] drop-shadow-md rounded-xl"
+        >
+          <!-- Card Image -->
+          <img
+            src="images/fiction.png"
+            class="w-full h-[260px] object-cover rounded-xl"
+          />
+
+          <!-- Category name -->
+          <h2
+            class="font-semibold text-[#131515] flex justify-center text-[22px] py-4"
+          >
+            Fiction
+          </h2>
+        </div>
+        <div
+          class="h-[330px] bg-white border border-[#f2f2f2] drop-shadow-md rounded-xl"
+        >
+          <!-- Card Image -->
+          <img
+            src="images/self help.png"
+            class="w-full h-[260px] object-cover rounded-xl"
+          />
+
+          <!-- Category name -->
+          <h2
+            class="font-semibold text-[#131515] flex justify-center text-[22px] py-4"
+          >
+            Self Help
+          </h2>
+        </div>
+        <div
+          class="h-[330px] bg-white border border-[#f2f2f2] drop-shadow-md rounded-xl"
+        >
+          <!-- Card Image -->
+          <img
+            src="images/business.png"
+            class="w-full h-[260px] object-cover rounded-xl"
+          />
+
+          <!-- Category name -->
+          <h2
+            class="font-semibold text-[#131515] flex justify-center text-[22px] py-4"
+          >
+            Business
+          </h2>
+        </div>
+      </div>
     </div>
   </body>
 </html>
