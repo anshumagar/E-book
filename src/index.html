@@ -14,7 +14,7 @@
       class="container min-h-screen bg-[#E1DDD2] bg-center bg-cover px-28 py-5 relative"
     >
       <nav class="flex items-center">
-        <img src="images/logo.png" class="w-40 cursor-pointer" />
+        <img src="images" class="w-40 cursor-pointer" />
         <ul class="flex-1 text-center">
           <li class="list-none inline-block px-5">
             <a href="index.html" class="text-[#131515] px-2">Home</a>
@@ -154,14 +154,18 @@
       <div class="grid grid-cols-5 gap-x-10 py-4">
         <!-- Card Image -->
         <div class="border border-[#f2f2f2] shadow-md rounded-xl">
-          <img src="images/new moon.png" class="w-full h-[280px] object-fill" />
+          <img
+            src="images/It ends with us.png"
+            class="w-full h-[280px] object-fill"
+            onclick="openpopup()"
+          />
 
           <!-- Book name -->
-          <div class="p-4 px-4 space-y-2">
+          <div class="p-4 px-4 space-y-2" onclick="openpopup()">
             <h2
               class="font-semibold text-[#131515] text-[22px] flex items-center justify-between"
             >
-              Harry Potter
+              Anshu Magar
               <iconify-icon
                 icon="ph:heart-light"
                 width="24"
@@ -404,5 +408,40 @@
         <section>Copyright © 2022 Book Library | All Rights Reserved.</section>
       </footer>
     </div>
+
+    <!--Popup-->
+    <div
+      class="flex w-[800px] h-[350px] bg-white border rounded-lg absolute invisible"
+      id="popup"
+    >
+      <img src="images/angel fallen.png" />
+      <div class="flex-1 p-5 space-y-4">
+        <h1 class="font-serif font-semibold text-[20px]">Harry Potter</h1>
+
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Perspiciatis, ipsa ut itaque quisquam optio aperiam quos deleniti
+          tempore distinctio ad ea excepturi in sapiente earum laboriosam a
+          accusantium libero modi! Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Modi, voluptatum? Reiciendis at quos accusantium.
+          Laboriosam possimus minima hic, earum in porro tempora rem quibusdam
+          unde ipsam. Sequi atque molestiae commodi.
+        </p>
+        <button
+          href="#"
+          class="bg-[#1768AC] text-white rounded-md py-2 px-6 font-medium absolute flex gap-x-3"
+        >
+          Read Now
+        </button>
+      </div>
+    </div>
+
+    <script>
+      let popup = document.getElementById("popup");
+
+      function openpopup() {
+        popup.classList.add("open-popup");
+      }
+    </script>
   </body>
 </html>
